@@ -1,3 +1,6 @@
+from os import system
+
+
 def print_red(text):
     # Secuencia de escape ANSI para color de texto rojo
     red_text = f"\033[91m{text}\033[0m"
@@ -17,3 +20,8 @@ def print_blue(text):
     # Secuencia de escape ANSI para color de texto azul
     blue_text = f"\033[94m{text}\033[0m"
     print(blue_text)
+
+def limpiar():
+    system("clear")
+    #system("cls")
+

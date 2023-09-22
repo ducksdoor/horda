@@ -32,11 +32,12 @@ def ft_start(x):
         print_yellow("SE BIENVENIDO A LA ONIONQUEST! una aventura con muchas capas, un olor extraño y que por supuesto. Te va a hacer llorar!")
         buliano = "no"
         while (buliano != "si"):
-            print_yellow("Si estas preparado puedes escribir si. Sin embargo, si quieres volver a hablar conmigo puedes escribir no")
+            print_yellow("Si estas preparado puedes escribir si. si tienes alguna duda, puedes escribir no")
             buliano = input(" ")
             if buliano == "si":
                 return(nombre)
             if buliano == "no":
+                print_red("tendremos que volver a empezar...")
                 x+=2
                 ft_estandar(x)
                 break
